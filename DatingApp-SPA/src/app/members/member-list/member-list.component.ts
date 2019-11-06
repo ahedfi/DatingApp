@@ -23,7 +23,6 @@ export class MemberListComponent implements OnInit {
   loadUsers() {
     this.userService.getUsers().subscribe(
       (users: User[]) => {
-        debugger
         this.users = users;
       },
       error => {
